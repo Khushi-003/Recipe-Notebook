@@ -1,0 +1,198 @@
+<!-- echo  "Title: " . $row["title"]. " Under: " . $row["under"]. " Time Taken:  " . $row["time taken"]. "Ingredients: " .$row["ingredients"]. "<br>";
+            
+        }
+    }
+    else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+    ?> -->
+
+            $query = "SELECT * FROM `saved` WHERE under='Dessert'";
+$query = "SELECT * FROM `saved` WHERE under='Dessert'";
+    $result = mysqli_query($conn, $query);
+    \\\
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css?php echo time(); ?>">    <title>Form Data</title>
+</head>
+
+<body>
+    <?php
+    include('../database/db_connection.php');
+    mysqli_select_db($conn, "recipe");
+    $query = "SELECT * FROM `saved`";
+    $result = mysqli_query($conn, $query);
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+    ?>
+            <div class="container">
+                <div class="one">
+                    <?php echo "Title: " . $row["title"] . "</br>"; ?>
+                </div>
+                <div class="two">
+                    <?php echo " Under: " . $row["under"] . "</br>";
+                    ?>
+                </div>
+                <div class="three">
+                    <?php echo " Time Taken:  " . $row["time taken"] . "</br>";
+                    ?>
+                </div>
+                <div class="four">
+                    <?php echo "Ingredients: " . $row["ingredients"] . "<br>"; ?>
+                </div>
+        <?php  }
+    } else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+
+        ?>
+</body>
+
+</html>
+<!-- echo  "Title: " . $row["title"]. " Under: " . $row["under"]. " Time Taken:  " . $row["time taken"]. "Ingredients: " .$row["ingredients"]. "<br>"; -->
+    ///
+
+    \\\
+<?php
+    session_start();
+    include('../database/db_connection.php');
+    $query =  mysqli_query($conn,"SELECT * FROM `saved` ");
+    $arrayM = mysqli_fetch_all($query);
+    $my = [];
+    for ($i = 0; $i < sizeof($arrayM); $i++) {
+            $my = $arrayM[$i];
+    }
+
+    ?>
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css?php echo time(); ?>">
+    <title>Hey Student</title>
+    
+</head>
+<body>
+
+    <div class="container">
+    <div class="detail">
+    <?php 
+    $Title = "Title : " .$my[1];
+    $Image = $my[5];
+    $Under = "Under: ".$my[2];
+    $Timetaken = "Time Taken :".$my[3];
+    $Ingredients = "Ingredients :".$my[4];
+    // echo "<h1>  $f_name </h1><h2>$r_number</h2>";
+    // echo '<img src='.$file_path.'></img>';
+    $style = "width:18rem;margin:20px;";
+    $card = "card";
+    $cardimg = "card-img-top";
+    $cardbody = "card-body";
+    $cardtitle = "card-title";
+    $cardtext = "card-text";
+    echo "<div class=".$card." style=$style >
+        <img src=".$Image." class=".$cardimg.">
+        <div class=".$cardbody.">
+        <h5 class=".$cardtitle.">$Title</h5>
+        <p class=".$cardtext.">$Under</p>
+        <p class=".$cardtext.">$Timetaken</p>
+        <p class=".$cardtext.">$Ingredients</p>
+        </div>
+    </div>
+    </br>
+    ";
+?>
+        </div>
+    </div>
+</body>
+</html>
+<!-- echo  "Title: " . $row["title"]. " Under: " . $row["under"]. " Time Taken:  " . $row["time taken"]. "Ingredients: " .$row["ingredients"]. "<br>"; 
+    <link rel="stylesheet" href="../css/all.css?php echo time(); ?>">
+
+-->
+    ///
+
+
+
+    <!-- <style>
+         <?php include "../css/all.css" ?>
+    </style> -->
+
+
+    a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+}
+
+ul {
+    background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: darkorange;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover,
+li:focus-within {
+    background: red;
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+    $query = "SELECT * FROM `saved` WHERE under='Drink' ";

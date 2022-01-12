@@ -1,0 +1,113 @@
+body {
+    background-image: url("https://img.freepik.com/free-photo/healthy-food-background-autumn-fresh-vegetables-dark-stone-table-with-copy-space-top-view_127032-1954.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    width: 500px;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #112D4E;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+.title {
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+#course option {
+    font-size: 2rem;
+    /* height: 3rem;
+    width: 10rem;
+    background-color: #DBE2EF; */
+    border-radius: 1rem;
+}
+
+#course {
+    height: 3rem;
+    width: 10rem;
+    background-color: #DBE2EF;
+    border-radius: 1rem;
+}
+
+#appt {
+    height: 3rem;
+    width: 10rem;
+    font-size: larger;
+    border-radius: 1rem;
+}
+
+.ing {
+    width: 400px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+textarea {
+    outline: none;
+    border-radius: 1rem;
+}
+
+.container {
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+select {
+    position: relative;
+    left: 10px;
+    border-radius: 1rem;
+}
+
+
+/* option {
+    height: 5rem;
+    width: 10rem;
+} */
+
+.course {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+    /* font-size: 10rem; */
+}
+
+#course {
+    font-size: 2rem;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: #DBE2EF;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.but {
+    height: 2.5rem;
+    width: 15rem;
+    background-color: cadetblue;
+    border-radius: 1rem;
+}
+
+.but-2 {
+    height: 2.5rem;
+    width: 10rem;
+    background-color: cadetblue;
+    border-radius: 1rem;
+    margin-left: 3rem;
+}
+
+#file_upload {
+    font-size: 2rem;
+    width: 27rem;
+    border-radius: 1rem;
+    color: black;
+}

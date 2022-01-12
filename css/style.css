@@ -1,0 +1,221 @@
+header {
+    background-image: url("https://merleswhiskeykitchen.com/wp-content/uploads/2016/10/black-paper.png");
+}
+
+.cen {
+    text-align: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #000;
+}
+
+.dropdown {
+    float: right;
+}
+
+img {
+    height: 10rem;
+    width: 12rem;
+}
+
+.nav {
+    float: right;
+    margin-top: -5rem;
+    margin-right: 25rem;
+}
+
+.dropdown {
+    margin-top: -10rem;
+    margin-right: 10rem;
+}
+
+.nav a {
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: gainsboro;
+}
+
+.cen {
+    font-size: 3vw;
+}
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #4b4c4d;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.carousel-inner {
+    background-color: wheat;
+    height: 30rem;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+.info {
+    font-size: larger;
+}
+
+#one {
+    background-color: blanchedalmond;
+}
+
+#two {
+    background-color: #CADEFC;
+}
+
+#three {
+    background-color: #F67280;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#new {
+    padding-top: 7px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black, -5px -5px 0 black, -5px 5px 0 black, 5px -5px 0 black;
+    transition: 500ms ease-in-out;
+}
+
+#new:hover {
+    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+#new:focus {
+    outline: none;
+}
+
+header {
+    padding: 2rem;
+}

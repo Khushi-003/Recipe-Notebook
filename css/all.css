@@ -1,0 +1,15 @@
+.container {
+    border: 2px solid black;
+    padding: 2rem;
+    height: 20rem;
+    width: 122rem;
+}
+
+.contain {
+    height: 5rem;
+    width: 5rem;
+}
+
+div {
+    background-color: #F8DF8B;
+}
