@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2021 at 07:22 PM
+-- Generation Time: Jan 22, 2022 at 06:59 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.26
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `recipe`
+-- Database: `test`
 --
 
 -- --------------------------------------------------------
@@ -32,21 +32,19 @@ CREATE TABLE `saved` (
   `title` varchar(100) NOT NULL,
   `under` varchar(50) NOT NULL,
   `time taken` int(10) NOT NULL,
-  `ingredients` text NOT NULL
+  `ingredients` text NOT NULL,
+  `file` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `saved`
 --
 
-INSERT INTO `saved` (`id`, `title`, `under`, `time taken`, `ingredients`) VALUES
-(9, 'Tea', 'Drink', 5, '1. Tea powder  2. Sugar 3. Water'),
-(13, 'milkshake', 'Drink', 7, 'milk, chocolate, sugar'),
-(14, 'Paneer Barbeque', 'Starter', 10, 'paneer, capsicum, onion'),
-(15, 'Dal', 'Main', 10, 'dal, water, chilli powder, cumin seeds, oil, salt'),
-(16, 'ice-cream', 'Dessert', 1, 'milk, sugar, vanilla essence, cream'),
-(27, '123', 'Starter', 17, 'idk'),
-(28, 'khushi', 'Main', 22, 'idk');
+INSERT INTO `saved` (`id`, `title`, `under`, `time taken`, `ingredients`, `file`) VALUES
+(2, 'eggplant', 'Main', 15, '1. eggplant\r\n2. masala', 'uploads/25102021232914.png'),
+(3, 'orange juice', 'Drink', 8, '1. orange\r\n2. juicer', 'uploads/26102021080203.png'),
+(4, 'milk', 'Drink', 18, 'milk', 'uploads/22012022172937.png'),
+(5, 'chocolate', 'Starter', 19, 'cocoa beans\r\nmilk\r\ncocopowder', 'uploads/22012022194204.png');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +64,7 @@ ALTER TABLE `saved`
 -- AUTO_INCREMENT for table `saved`
 --
 ALTER TABLE `saved`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

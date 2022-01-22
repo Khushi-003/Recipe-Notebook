@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all.css?php echo time(); ?>">    <title>Form Data</title>
+    <link rel="stylesheet" href="../css/all.css?php echo time(); ?>">
+    <title>Form Data</title>
     <style>
-    <?php include "../css/all.css" ?>
+        <?php include "../css/all.css" ?>
     </style>
 </head>
 
@@ -22,23 +23,23 @@
     ?>
             <div class="container">
                 <div>
-                    <?php echo "Photo: " .'<img src="'.$row["file"].'" alt="HTML5 Icon" class="contain" style="width:128px;height:128px">'. "</br>";
+                    <?php echo "Photo: " . '<img src="' . $row["file"] . '" alt="HTML5 Icon" class="contain" style="width:128px;height:128px">' . "</br>";
                     echo "Title: " . $row["title"] . "</br>";
                     echo " Under: "  . $row["under"] . "</br>";
                     echo " Time Taken:  " . $row["time taken"] . "</br>";
                     echo "Ingredients: " . $row["ingredients"] . "<br>";
                     ?>
                 </div>
-            </div>   
+            </div>
 
-                
-        <?php  }
+
+    <?php  }
     } else {
         echo "0 results";
     }
     mysqli_close($conn);
 
-        ?>
+    ?>
 </body>
 
 </html>
